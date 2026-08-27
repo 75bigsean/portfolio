@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Big Sean - Editor de vídeo profissional. Edição para YouTube, Reels, institucionais e eventos.">
+  <title>Big Sean | Editor de Vídeo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>🎬</text></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio">
+        <i class="bi bi-camera-reels-fill text-warning me-2"></i>Big<span class="text-warning">Sean</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio" data-i18n="nav_inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre" data-i18n="nav_sobre">Sobre Mim</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conhecimentos" data-i18n="nav_conhecimentos">Conhecimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies" data-i18n="nav_hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato" data-i18n="nav_contato">Contato</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="btnDarkMode" class="btn btn-outline-light btn-sm rounded-pill px-3" aria-label="Alternar modo escuro">
+              <i class="bi bi-moon-fill"></i>
+            </button>
+            <button id="btnIdioma" class="btn btn-outline-light btn-sm rounded-pill px-3 ms-1" aria-label="Alternar idioma">
+              🇧🇷
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero d-flex align-items-center text-center text-light">
+    <div class="container py-5">
+      <div class="avatar mx-auto mb-4 shadow-lg">
+        <img src="images/udrlst.webp" alt="Foto de Big Sean" class="avatar-img">
+      </div>
+      <p class="text-uppercase letter-spacing mb-2" data-i18n="hero_ola">Olá, eu sou</p>
+      <h1 class="display-3 fw-bold mb-3">Big Sean</h1>
+      <h2 class="fs-3 fw-normal mb-4 min-height-type"><span id="typed" class="text-warning"></span><span class="cursor">|</span></h2>
+      <p class="lead col-lg-8 mx-auto mb-4" data-i18n="hero_desc">
+        Editor de vídeo apaixonado por transformar ideias em histórias que prendem a atenção
+        do primeiro ao último segundo.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="#projetos" class="btn btn-warning btn-lg px-4 rounded-pill fw-semibold">
+          <i class="bi bi-play-circle me-2"></i><span data-i18n="hero_btn_projetos">Ver Projetos</span>
+        </a>
+        <a href="#contato" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+          <i class="bi bi-chat-dots me-2"></i><span data-i18n="hero_btn_contato">Fale Comigo</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="sobre" class="py-5">
+    <div class="container py-4 reveal">
+      <div class="text-center mb-5">
+        <h2 class="section-title d-inline-block" data-i18n="sobre_titulo">Apresentação Pessoal</h2>
+        <p class="text-secondary mt-2" data-i18n="sobre_sub">Quem é Big Sean além da linha do tempo?</p>
+      </div>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5 text-center">
+          <img src="images/udrlst.webp" alt="Foto de perfil de Big Sean" class="img-fluid rounded-4 shadow about-photo">
+        </div>
+        <div class="col-lg-7">
+          <h3 class="fw-bold mb-3" data-i18n="sobre_cargo">Editor de vídeo</h3>
+          <p class="text-secondary" data-i18n="sobre_desc1">
+            Editor com mais de dois anos de experiência criando vídeos tanto em formato longo quanto formato curto.
+          </p>
+          <p class="text-secondary" data-i18n="sobre_desc2">
+            Trabalho com cortes dinâmicos, color grading, motion graphics e sound design, sempre respeitando
+            o prazo e o estilo de cada cliente.
+          </p>
+          <div class="row g-3 my-4" id="stats">
+            <div class="col-4">
+              <div class="stat-card text-center p-3 rounded-3 h-100">
+                <span class="display-6 fw-bold text-warning" data-contador="2">0</span>
+                <small class="d-block text-secondary" data-i18n="stat_anos">Anos de experiência</small>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card text-center p-3 rounded-3 h-100">
+                <span class="display-6 fw-bold text-warning" data-contador="100">0</span>
+                <small class="d-block text-secondary" data-i18n="stat_projetos">Projetos entregues</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="conhecimentos" class="py-5">
+    <div class="container py-4 reveal">
+      <div class="text-center mb-5">
+        <h2 class="section-title d-inline-block" data-i18n="conh_titulo">Conhecimentos e Competências</h2>
+        <p class="text-secondary mt-2" data-i18n="conh_sub">Ferramentas que domino e habilidades que desenvolvi</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h4 class="fw-bold mb-4"><i class="bi bi-tools text-warning me-2"></i><span data-i18n="conh_ferramentas">Ferramentas</span></h4>
+          <div class="row g-3 h-100">
+            <div class="col-12">
+              <div class="competencia-card p-3 rounded-3 h-100 d-flex flex-column justify-content-between">
+                <div>
+                  <svg fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:3rem;height:3rem;" class="text-warning"><path d="M17.621 0 5.977.004c-1.37 0-2.756.345-3.762 1.11a4.925 4.925 0 0 0-1.61 2.003C.233 3.93 0 5.02 0 5.951l.012 12.2c.002 1.604.479 3.057 1.461 4.112.984 1.056 2.462 1.683 4.331 1.691L16.856 24c1.26.005 3.095-.036 4.303-.714 1.075-.605 2.025-1.556 2.497-2.984.278-.84.345-2.084.344-3.147l-.021-11.13c-.002-.888-.15-2.023-.547-2.934-.425-.976-1.181-1.815-2.322-2.425C20.353.26 19.123 0 17.622 0zm0 .93c1.378 0 2.538.295 3.04.565.977.523 1.544 1.166 1.889 1.96.315.721.47 1.793.473 2.572l.018 11.13c.002 1.013-.097 2.257-.298 2.86-.396 1.202-1.146 1.946-2.063 2.462-.814.457-2.612.593-3.82.588l-11.05-.044c-1.657-.007-2.832-.534-3.626-1.386-.792-.851-1.212-2.06-1.212-3.485L.999 5.95c0-.829.196-1.827.474-2.437.345-.757.75-1.207 1.365-1.674C3.585 1.27 4.868.97 6.08.97zm-5.66 3.423c-1.976.089-3.204 1.658-3.214 3.29.019 1.443 1.635 3.481 2.884 4.53.12.099.154.109.33.18.062.025.198-.047.327-.135.36-.245.993-.947 1.648-1.738a7.67 7.67 0 0 0 1.031-1.683c.409-.89.261-1.599.235-1.888a3.983 3.983 0 0 0-.99-1.692 3.36 3.36 0 0 0-2.251-.864zm4.172 7.922a10.185 10.185 0 0 0-3.244.61c-.15.058-.26.1-.374.17-.057.036-.11.135-.105.292.017.433.29 1.278.624 2.27.384 1.135 1.066 2.27 1.844 2.74a3.23 3.23 0 0 0 2.53.342c.832-.243 1.595-.868 1.962-1.546.986-1.818.19-3.548-1.121-4.417-.447-.296-1.133-.445-1.89-.46-.074 0-.15-.002-.226-.001zm-8.432.038a6.201 6.201 0 0 0-.752.047c-.596.078-.932.273-1.29.51a3.177 3.177 0 0 0-1.365 1.979c-.075.552-.086 1.053.033 1.507.433 1.389 1.326 2.222 2.847 2.452.636.028 1.37-.063 1.99-.45 1.269-.782 2.08-3.17 2.412-4.742.053-.176.035-.357-.013-.42-.005-.067-.044-.113-.19-.183-.398-.192-1.32-.417-2.375-.6a7.68 7.68 0 0 0-1.297-.1z"/></svg>
+                  <h4 class="fw-bold mt-2 mb-1">DaVinci Resolve</h4>
+                  <small class="text-secondary" data-i18n="davinci_desc">Edição, color grading, SFX e finalização profissional.</small>
+                </div>
+                <div>
+                  <div class="progress mt-2" role="progressbar" aria-label="Nível em DaVinci Resolve" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="height:10px;">
+                    <div class="progress-bar bg-warning progresso" data-largura="80%"></div>
+                  </div>
+                  <small class="text-secondary fw-semibold d-block mt-1"><span data-i18n="nivel">Nível</span>: 80%</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h4 class="fw-bold mb-4"><i class="bi bi-stars text-warning me-2"></i><span data-i18n="conh_competencias">Competências</span></h4>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="competencia-card p-3 rounded-3 h-100">
+                <i class="bi bi-scissors fs-4 text-warning"></i>
+                <h6 class="fw-bold mt-2 mb-1" data-i18n="comp_edicao">Edição Criativa</h6>
+                <small class="text-secondary" data-i18n="comp_edicao_desc">Cortes dinâmicos e ritmados que seguram a atenção.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="competencia-card p-3 rounded-3 h-100">
+                <i class="bi bi-magic fs-4 text-warning"></i>
+                <h6 class="fw-bold mt-2 mb-1">Motion Graphics</h6>
+                <small class="text-secondary" data-i18n="comp_motion_desc">Animações, legendas estilizadas e transições suaves.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="competencia-card p-3 rounded-3 h-100">
+                <i class="bi bi-palette fs-4 text-warning"></i>
+                <h6 class="fw-bold mt-2 mb-1">Color Grading</h6>
+                <small class="text-secondary" data-i18n="comp_color_desc">Tratamento de cor que valoriza cada cena.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="competencia-card p-3 rounded-3 h-100">
+                <i class="bi bi-soundwave fs-4 text-warning"></i>
+                <h6 class="fw-bold mt-2 mb-1">Sound Design</h6>
+                <small class="text-secondary" data-i18n="comp_sound_desc">Mixagem, trilha e efeitos sonoros imersivos.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="competencia-card p-3 rounded-3 h-100">
+                <i class="bi bi-people fs-4 text-warning"></i>
+                <h6 class="fw-bold mt-2 mb-1" data-i18n="comp_comunicacao">Comunicação</h6>
+                <small class="text-secondary" data-i18n="comp_comunicacao_desc">Escuta ativa e alinhamento constante com o cliente.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="competencia-card p-3 rounded-3 h-100">
+                <i class="bi bi-clock-history fs-4 text-warning"></i>
+                <h6 class="fw-bold mt-2 mb-1" data-i18n="comp_prazos">Gestão de Prazos</h6>
+                <small class="text-secondary" data-i18n="comp_prazos_desc">Organização e entrega pontual, sempre.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="py-5 bg-body-tertiary">
+    <div class="container py-4 reveal">
+      <div class="text-center mb-5">
+        <h2 class="section-title d-inline-block" data-i18n="proj_titulo">Projetos Realizados</h2>
+        <p class="text-secondary mt-2" data-i18n="proj_sub">Uma seleção dos trabalhos de que mais me orgulho</p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" id="filtros">
+        <button class="btn btn-filter active rounded-pill px-4" data-filtro="todos" data-i18n="filtro_todos">Todos</button>
+        <button class="btn btn-filter rounded-pill px-4" data-filtro="youtube">YouTube</button>
+        <button class="btn btn-filter rounded-pill px-4" data-filtro="reels">Reels &amp; Shorts</button>
+      </div>
+      <div class="row g-4" id="lista-projetos">
+        <div class="col-12 projeto" data-categoria="youtube">
+          <article class="card projeto-card border-0 shadow-sm h-100 d-flex flex-column flex-md-row">
+            <div class="project-thumb thumb-youtube">
+              <img src="images\20589900_237619696759806_3870434599406403584_a.jpg" alt="Thumbnail O Pior Time é o Seu" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column flex-grow-1">
+              <h5 class="card-title fw-bold" data-i18n="proj1_titulo">Programa Semanal - O Pior Time é o Seu</h5>
+              <p class="card-text text-secondary small" data-i18n="proj1_desc">Programa semanal humorístico sobre os momentos mais inusitados das rodadas da
+                NFL. Duração média de 30 minutos, responsável pela edição, thumbnails, roteiro e ocasionalmente apresentador.
+              </p>
+              <div class="mt-auto">
+                <a href="https://youtu.be/rGL5EvGryPg" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill float-end">
+                  <i class="bi bi-play-btn me-1"></i><span data-i18n="btn_assistir">Assistir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 projeto" data-categoria="reels">
+          <article class="card projeto-card border-0 shadow-sm h-100 d-flex flex-column flex-md-row">
+            <div class="project-thumb thumb-reels">
+              <img src="images/82sp1a.jpg" alt="Thumbnail Reels - Cristian Felipe" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column flex-grow-1">
+              <h5 class="card-title fw-bold" data-i18n="proj2_titulo">Reels - Cristian Felipe</h5>
+              <p class="card-text text-secondary small" data-i18n="proj2_desc">Conteúdo voltado para o público fã de futebol americano para redes sociais. Vídeos de discussão, opinião e 
+                criando expectativa sobre jogadores e times para a temporada de 2026. Responsável pela edição e legendagem.
+              </p>
+              <div class="mt-auto">
+                <a href="https://www.instagram.com/p/Da0VqejBueJ/" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill float-end">
+                  <i class="bi bi-play-btn me-1"></i><span data-i18n="btn_assistir">Assistir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 projeto" data-categoria="reels">
+          <article class="card projeto-card border-0 shadow-sm h-100 d-flex flex-column flex-md-row">
+            <div class="project-thumb thumb-inst">
+              <img src="images/dd57516897dfc390f30c87608265bb37~tplv-tiktokx-cropcenter_1080_1080.jpeg" alt="Thumbnail Cortes de Lives - Ponto a Ponto" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column flex-grow-1">
+              <h5 class="card-title fw-bold" data-i18n="proj3_titulo">Cortes de Lives - Ponto a Ponto</h5>
+              <p class="card-text text-secondary small" data-i18n="proj3_desc">Cortes das lives semanais postados nas redes sociais. Responsável pela edição, decupagem e legendagem. </p>
+              <div class="mt-auto">
+                <a href="https://www.tiktok.com/@pppontoaponto/video/7569229378224278791" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill float-end">
+                  <i class="bi bi-play-btn me-1"></i><span data-i18n="btn_assistir">Assistir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 projeto" data-categoria="reels">
+          <article class="card projeto-card border-0 shadow-sm h-100 d-flex flex-column flex-md-row">
+            <div class="project-thumb thumb-eventos">
+              <img src="images/20589900_237619696759806_3870434599406403584_a.jpg" alt="Thumbnail Jogos - On The Clock" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="card-body d-flex flex-column flex-grow-1">
+              <h5 class="card-title fw-bold" data-i18n="proj4_titulo">Jogos - On The Clock</h5>
+              <p class="card-text text-secondary small" data-i18n="proj4_desc">Vídeos com brincadeiras temáticas com relação com a NFL. Responsável pela produção, edição e legendagem.</p>
+              <div class="mt-auto">
+                <a href="https://www.instagram.com/reel/DJ2hNDTA18Y/" target="_blank" class="btn btn-outline-dark btn-sm rounded-pill float-end">
+                  <i class="bi bi-play-btn me-1"></i><span data-i18n="btn_assistir">Assistir</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies" class="py-5 bg-body-tertiary">
+    <div class="container py-4 reveal">
+      <div class="text-center mb-5">
+        <h2 class="section-title d-inline-block" data-i18n="hobbies_titulo">Hobbies</h2>
+        <p class="text-secondary mt-2" data-i18n="hobbies_sub">O que me inspira fora da timeline</p>
+      </div>
+      <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+        <div class="col">
+          <div class="hobby-card text-center p-4 rounded-4 h-100">
+            <i class="bi bi-boombox hobby-icon"></i>
+            <h5 class="fw-bold mt-3" data-i18n="hobby_musica">Música</h5>
+            <p class="text-secondary small mb-0" data-i18n="hobby_musica_desc">Seja jogando, na academia ou até mesmo editando a música está sempre ao meu lado.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="hobby-card text-center p-4 rounded-4 h-100">
+            <span class="hobby-icon" role="img" aria-label="Bola de futebol americano">🏈</span>
+            <h5 class="fw-bold mt-3" data-i18n="hobby_futebol">Futebol Americano</h5>
+            <p class="text-secondary small mb-0" data-i18n="hobby_futebol_desc">Minha vida gira em torno do futebol americano. Assisto todos os jogos que eu consigo,
+              além de jogar e produzir conteúdo sobre NFL. Foi a minha porta de entrada para a edição de vídeo.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="hobby-card text-center p-4 rounded-4 h-100">
+            <i class="bi bi-controller hobby-icon"></i>
+            <h5 class="fw-bold mt-3">Games</h5>
+            <p class="text-secondary small mb-0" data-i18n="hobby_games_desc">Após passar horas editando, nada melhor do que abrir o meu jogo favorito e passar horas
+              jogando antes do próximo vídeo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="py-5 contato-section text-light">
+    <div class="container py-4 reveal">
+      <div class="text-center mb-5">
+        <h2 class="section-title section-title-light d-inline-block" data-i18n="contato_titulo">Contato</h2>
+        <p class="mt-2 text-white-50" data-i18n="contato_sub">Tem um vídeo em mente? Vamos conversar!</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <h4 class="fw-bold mb-4" data-i18n="contato_formas">Formas de contato</h4>
+          <a href="https://wa.me/5511946289977" target="_blank" rel="noopener" class="contato-item d-flex align-items-center gap-3 p-3 rounded-3 mb-3 text-decoration-none text-light">
+            <span class="contato-icon"><i class="bi bi-whatsapp"></i></span>
+            <span>
+              <strong class="d-block">WhatsApp</strong>
+              <small class="text-white-50">(11) 94628-9977</small>
+            </span>
+          </a>
+          <a href="mailto:bigseanproductions@gmail.com" class="contato-item d-flex align-items-center gap-3 p-3 rounded-3 mb-3 text-decoration-none text-light">
+            <span class="contato-icon"><i class="bi bi-envelope"></i></span>
+            <span>
+              <strong class="d-block">E-mail</strong>
+              <small class="text-white-50">bigseanproductions@gmail.com</small>
+            </span>
+          </a>
+          <a href="https://twitter.com/75bigsean" target="_blank" rel="noopener" class="contato-item d-flex align-items-center gap-3 p-3 rounded-3 mb-3 text-decoration-none text-light">
+            <span class="contato-icon"><i class="bi bi-twitter-x"></i></span>
+            <span>
+              <strong class="d-block">Twitter</strong>
+              <small class="text-white-50">@75bigsean</small>
+            </span>
+          </a>
+          <a href="https://instagram.com/75bigsean" target="_blank" rel="noopener" class="contato-item d-flex align-items-center gap-3 p-3 rounded-3 mb-3 text-decoration-none text-light">
+            <span class="contato-icon"><i class="bi bi-instagram"></i></span>
+            <span>
+              <strong class="d-block">Instagram</strong>
+              <small class="text-white-50">@75bigsean</small>
+            </span>
+          </a>
+          <a href="https://discord.com/users/75bigsean" target="_blank" rel="noopener" class="contato-item d-flex align-items-center gap-3 p-3 rounded-3 mb-3 text-decoration-none text-light">
+            <span class="contato-icon"><i class="bi bi-discord"></i></span>
+            <span>
+              <strong class="d-block">Discord</strong>
+              <small class="text-white-50">@75bigsean</small>
+            </span>
+          </a>
+          <hr class="border-secondary my-4">
+          <p class="text-white-50 small mb-0">
+            <i class="bi bi-clock me-2"></i><span data-i18n="contato_prazo">Respondo mensagens em até 24 horas, todos os dias.</span>
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <form id="formContato" class="needs-validation h-100 d-flex flex-column" novalidate>
+            <div class="row g-3 flex-grow-1">
+              <div class="col-md-6">
+                <label for="nome" class="form-label" data-i18n="form_nome">Nome *</label>
+                <input type="text" class="form-control form-control-lg" id="nome" name="nome" data-i18n-placeholder="form_nome_ph" placeholder="Seu nome completo" required minlength="3">
+                <div class="invalid-feedback" data-i18n="form_nome_err">Informe seu nome (mínimo de 3 caracteres).</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label" data-i18n="form_email">E-mail *</label>
+                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="voce@exemplo.com" required>
+                <div class="invalid-feedback" data-i18n="form_email_err">Informe um e-mail válido.</div>
+              </div>
+              <div class="col-12">
+                <label for="tipo" class="form-label" data-i18n="form_tipo">Tipo de projeto</label>
+                <select class="form-select form-select-lg" id="tipo" name="tipo">
+                  <option value="" selected data-i18n="form_tipo_op0">Selecione uma opção (opcional)</option>
+                  <option value="youtube" data-i18n="form_tipo_op1">Vídeo para YouTube</option>
+                  <option value="reels" data-i18n="form_tipo_op2">Reels / Shorts / TikTok</option>
+                  <option value="institucional" data-i18n="form_tipo_op3">Vídeo Institucional</option>
+                  <option value="outro" data-i18n="form_tipo_op4">Outro</option>
+                </select>
+              </div>
+              <div class="col-12 d-flex flex-column">
+                <label for="mensagem" class="form-label" data-i18n="form_msg">Mensagem *</label>
+                <textarea class="form-control flex-grow-1" id="mensagem" name="mensagem" rows="5" data-i18n-placeholder="form_msg_ph" placeholder="Me conte um pouco sobre o seu projeto..." required minlength="10"></textarea>
+                <div class="invalid-feedback" data-i18n="form_msg_err">Escreva uma mensagem com pelo menos 10 caracteres.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-warning btn-lg rounded-pill px-5 fw-semibold" id="btnEnviar">
+                  <i class="bi bi-send me-2"></i><span data-i18n="form_enviar">Enviar Mensagem</span>
+                </button>
+              </div>
+              <div class="col-12">
+                <div id="alertaSucesso" class="alert alert-success d-none mb-0" role="status">
+                  <i class="bi bi-check-circle-fill me-2"></i><span data-i18n="form_sucesso">Mensagem enviada com sucesso! Retornarei o contato em breve.</span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0 small">&copy; <span id="ano"></span> Big Sean — <span data-i18n="footer_title">Editor de Vídeo</span>. <span data-i18n="footer_direitos">Todos os direitos reservados.</span></p>
+      <div class="d-flex gap-3 fs-5">
+        <a href="https://wa.me/5511946289977" target="_blank" rel="noopener" class="link-light" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://instagram.com/75bigsean" target="_blank" rel="noopener" class="link-light" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/75bigsean" target="_blank" rel="noopener" class="link-light" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://discord.com/users/75bigsean" target="_blank" rel="noopener" class="link-light" aria-label="Discord"><i class="bi bi-discord"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="btnTopo" class="btn btn-warning rounded-circle shadow" aria-label="Voltar ao topo">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <div class="modal fade" id="modalProjeto" tabindex="-1" aria-labelledby="modalTituloProjeto" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="modalTituloProjeto" data-i18n="modal_titulo">Player do Projeto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+            <iframe src="https://www.youtube.com/embed/rGL5EvGryPg" title="Player do Projeto" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="modal_fechar">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

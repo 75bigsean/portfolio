@@ -268,17 +268,32 @@ document.addEventListener("DOMContentLoaded", () => {
     btnEnviar.innerHTML =
       `<span class="spinner-border spinner-border-sm me-2"></span>${enviando}`;
 
-    setTimeout(() => {
-      alerta.classList.remove("d-none");
-      form.reset();
-      form.classList.remove("was-validated");
-      btnEnviar.disabled = false;
-      const langAtual = html.getAttribute("lang") === "en" ? "en" : "pt";
-      btnEnviar.innerHTML = `<i class="bi bi-send me-2"></i>${traducoes[langAtual].form_enviar}`;
+    const dados = new FormData(form);
 
-      setTimeout(() => alerta.classList.add("d-none"), 6000);
-      alerta.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 1200);
+    fetch(form.action, { method: "POST", body: dados, headers: { Accept: "application/json" } })
+      .then((resposta) => {
+        if (resposta.ok) {
+          alerta.classList.remove("d-none");
+          form.reset();
+          form.classList.remove("was-validated");
+          alerta.scrollIntoView({ behavior: "smooth", block: "center" });
+          setTimeout(() => alerta.classList.add("d-none"), 6000);
+        } else {
+          throw new Error("Falha no envio");
+        }
+      })
+      .catch(() => {
+        const mensagemErro =
+          html.getAttribute("lang") === "en"
+            ? "There was a problem sending your message. Please try again."
+            : "Houve um problema ao enviar sua mensagem. Tente novamente.";
+        alert(mensagemErro);
+      })
+      .finally(() => {
+        btnEnviar.disabled = false;
+        const langAtual = html.getAttribute("lang") === "en" ? "en" : "pt";
+        btnEnviar.innerHTML = `<i class="bi bi-send me-2"></i>${traducoes[langAtual].form_enviar}`;
+      });
   });
 
   const btnTopo = document.getElementById("btnTopo");
